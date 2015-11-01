@@ -1,0 +1,21 @@
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background {
+  background-color: #8B9698;
+}
+
+.search-box {
+  width: 220px
+}
+
+.search-width {
+  width: 230px;
+}
+
+/*.col-lg-offset-4 {
+  margin-left: 29%;
+}*/
