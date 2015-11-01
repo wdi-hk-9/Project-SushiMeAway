@@ -2601,3 +2601,123 @@ Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b098
 
 
 Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-11-01 19:43:24 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 128ms (Views: 126.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+
+
+Started GET "/assets/application.self-915f1362ad35d2bb14e45478ab08c0aede0515dcdcb4862846d9a1bc9d6be30b.css?body=1" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-11-01 19:45:57 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 137ms (Views: 136.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+
+
+Started GET "/assets/application.self-915f1362ad35d2bb14e45478ab08c0aede0515dcdcb4862846d9a1bc9d6be30b.css?body=1" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-11-01 19:50:31 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-01 19:54:50 +0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 140ms (Views: 138.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-915f1362ad35d2bb14e45478ab08c0aede0515dcdcb4862846d9a1bc9d6be30b.css?body=1" for 127.0.0.1 at 2015-11-01 19:54:51 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-01 19:54:51 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-01 19:54:51 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-01 19:54:51 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-01 19:54:51 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-01 19:54:51 +0800
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-11-01 19:54:51 +0800
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-11-01 19:54:51 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 124ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
+
+
+Started GET "/assets/application.self-915f1362ad35d2bb14e45478ab08c0aede0515dcdcb4862846d9a1bc9d6be30b.css?body=1" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-11-01 19:59:10 +0800
