@@ -4,32 +4,11 @@
     <p>Love take away sushi? You're in the right place!</p>
     <p>
       <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Restaurant Name">
-        </div>
-        <button type="submit" class="btn btn-default">Search</button>
-      </form>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <select class="form-control">
-            <option>Kennedy Town</option>
-            <option>HKU</option>
-            <option>Sai Ying Pun</option>
-            <option>Sheung Wan</option>
-            <option>Central</option>
-            <option>Admiralty</option>
-            <option>Wan Chai</option>
-            <option>Causeway Bay</option>
-            <option>Tin Hau</option>
-            <option>Fortress Hill</option>
-            <option>North Point</option>
-            <option>Quarry Bay</option>
-            <option>Tai Koo</option>
-            <option>Sai Wan Ho</option>
-            <option>Shau Kei Wan</option>
-            <option>Heng Fa Chuen</option>
-            <option>Chai Wan</option>
-        </select>
+         <div class="form-group">
+            <input type="text" class="form-control" placeholder="District Name">
+            <%= districts_options %>
+
+
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>

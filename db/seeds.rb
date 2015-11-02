@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Execute this file and add these stuf to the db with
+
+# rake db:seed
+
+
+# => Restaurant(id: integer, name: string, website: string, address: string, description: string, price_range: string, image_url: string, telephone: string, created_at: datetime, updated_at: datetime)
+#
+
+# Restaurant.create({name: "sushi O"})
