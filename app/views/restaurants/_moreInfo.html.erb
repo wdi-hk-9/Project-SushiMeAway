@@ -1,0 +1,37 @@
+<h3>Type</h3>
+<ul>
+    <li><%= @restaurant.price_range %></li>
+</ul>
+<ul>
+    <li>Take-out</li>
+    <li>Dine-in</li>
+    <li>Delivery</li>
+    <li>Supermarket/li>
+</ul>
+
+<h3>Location</h3>
+<ul>
+    <li><%= @restaurant.address %></li>
+    <li>District</li>
+    <li><a href="#"> Google map link </a></li>
+</ul>
+
+<h3>Opening Hours</h3>
+<ul>
+    <li>Mon - Fri <span> 0:00 - 0:00</span></li>
+    <li>Sat - Sun & PH <span> 0:00 - 0:00</span></li>
+</ul>
+
+<h3>Website</h3>
+<ul>
+    <li><a href="#"><%= @restaurant.website %></a></li>
+</ul>
+
+<h3>Telephone Number</h3>
+<ul>
+    <li><%= @restaurant.telephone %></li>
+</ul>
+
+<!-- Toggle -->
+<h3>Shop Description</h3>
+<p><%= @restaurant.description %></p>
