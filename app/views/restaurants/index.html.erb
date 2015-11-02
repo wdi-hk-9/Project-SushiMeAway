@@ -1,10 +1,7 @@
 <% @restaurants.each do |restaurant| %>
+<ul>
   <%= restaurant.name %>
-  <%= restaurant.website %>
   <%= restaurant.address %>
-  <%= restaurant.description %>
-  <%= restaurant.price_range %>
-  <%= restaurant.image_url %>
-  <%= restaurant.telephone %>
   <%= link_to 'Show', restaurant %>
+<ul>
 <% end %>
