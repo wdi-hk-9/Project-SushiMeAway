@@ -1,3 +1,7 @@
 <% @restaurants.each do |restaurant| %>
-  <%= restaurant.inspect %>
+<ul>
+  <%= restaurant.name %>
+  <%= restaurant.address %>
+  <%= link_to 'Show', restaurant %>
+<ul>
 <% end %>
