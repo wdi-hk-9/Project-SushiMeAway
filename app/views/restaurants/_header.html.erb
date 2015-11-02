@@ -3,7 +3,7 @@
     <div class="col-lg-12">
         <h1 class="page-header">
           <%= @restaurant.name %>
-            <p><small>District (not in DB)</small>
+            <p>
               <span class="pull-right">
                 <span> * </span>
                 <span> * </span>
@@ -11,14 +11,14 @@
                 <span> * </span>
                 <span> * </span>
               </span>
-            <p>
+            </p>
 
             <p>
               <small>
                 <%= @restaurant.address %>
               </small>
-              <span class="pull-right"><%= @restaurant.price_range %></span>
             </p>
+            <p> <%= @restaurant.price_range %></p>
         </h1>
     </div>
 </div>
