@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: sushi_app_production
-  username: sushi_app
-  password: <%= ENV['SUSHI_APP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
