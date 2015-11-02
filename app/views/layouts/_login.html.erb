@@ -1,0 +1,30 @@
+<!-- log in dropdown-->
+<% if current_user %>
+
+  <li><a href="#"> hello, <%= current_user.email %> </a></li>
+  <li><%= link_to 'Logout', session_path(session), method: :delete %></li>
+
+<% else %>
+
+  <li><%= link_to 'Register', new_user_path %></li>
+
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log In <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <%= form_tag sessions_path, class: "navbar-form navbar-right" do %>
+        <div class="field">
+          <%= label_tag :email %>
+          <%= text_field_tag :email, params[:email], {class: "form-control", placeholder: "Email"} %>
+        </div>
+        <div class="field">
+          <%= label_tag :password %>
+          <%= password_field_tag :password, {placeholder: "Email"} %>
+        </div>
+        <div class="actions">
+          <button class="btn btn-primary"> Log in</button>
+        </div>
+      <% end %>
+
+    </ul>
+  </li>
+<% end %>
