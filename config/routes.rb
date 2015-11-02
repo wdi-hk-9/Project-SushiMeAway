@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   get 'login', to: 'sessions#new'
   resources :sessions, only: [:index, :new, :create, :destroy]
+
+  resources :restaurants, only: [:index]
 end
