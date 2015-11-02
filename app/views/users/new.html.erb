@@ -1,2 +1,29 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+  <h2>Become a Sushi-Me Away member now!</h2>
+  <%= form_for @user do |f| %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well user_registers">
+        <h2>Join us</h2>
+        <form role="form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+          </div>
+          <div class="form-group">
+            <label for="confirm_pwd">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirm_pwd" placeholder="Enter password again">
+          </div>
+          <button type="submit" class="btn btn-default">Join us</button>
+        </form>
+      </div>
+    <div>
+  </div>
+  <% end %>
