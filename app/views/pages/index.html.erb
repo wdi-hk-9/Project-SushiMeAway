@@ -5,7 +5,7 @@
     <div>
       <%= form_tag 'restaurants/search', class: "navbar-form navbar-left" do |f| %>
          <div class="form-group">
-            <%= collection_select(:restaurant, :district_id, District.all, :id, :name, {prompt: "Select a distict"}, {class: "form-control"}) %>
+            <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, prompt: true) %>
         </div>
         <%= submit_tag 'Search', class:"btn btn-default" %>
       <% end %>

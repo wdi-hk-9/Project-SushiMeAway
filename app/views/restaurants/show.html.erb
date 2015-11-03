@@ -1,0 +1,19 @@
+
+<div class="container">
+
+  <%= render 'restaurants/header' %>
+
+  <div class="row">
+
+    <div class="col-md-8">
+      <img class="img-responsive" src="<%= @restaurant.image_url %>" alt="<%= @restaurant.name %>" style="width:700px;height:400px;">
+    </div>
+
+    <div class="col-md-4">
+      <%= render 'restaurants/moreInfo' %>
+    </div>
+
+  </div>
+</div>
+
+<hr>

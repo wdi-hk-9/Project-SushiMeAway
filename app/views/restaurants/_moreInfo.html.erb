@@ -1,0 +1,34 @@
+<h3>Type (not in db)</h3>
+<ul>
+    <li>Take-out</li>
+    <li>Dine-in</li>
+    <li>Delivery</li>
+    <li>Supermarket</li>
+</ul>
+
+<h3>Location</h3>
+<ul>
+    <li><%= @restaurant.address %></li>
+    <li>District (not in db)</li>
+    <li><a href="#"> Google map link (not in db)</a></li>
+</ul>
+
+<h3>Opening Hours</h3>
+<ul>
+    <li>Mon - Fri <span> <%= @restaurant.opening_weekday %></span></li>
+    <li>Sat - Sun <span><%= @restaurant.opening_weekend %></span></li>
+</ul>
+
+<h3>Website</h3>
+<ul>
+    <li><a href="#"><%= @restaurant.website %></a></li>
+</ul>
+
+<h3>Telephone Number</h3>
+<ul>
+    <li><%= @restaurant.telephone %></li>
+</ul>
+
+<!-- Toggle -->
+<h3>Shop Description</h3>
+<p><%= @restaurant.description %></p>

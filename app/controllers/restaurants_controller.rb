@@ -9,4 +9,8 @@ class RestaurantsController < ApplicationController
     @restaurants = District.find(district_id).restaurants
     render 'index'
   end
+
+  def show
+    @restaurant = Restaurant.find(params[:id])
+  end
 end
