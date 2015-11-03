@@ -2,12 +2,15 @@
   <div class="col-lg-12">
       <h1 class="page-header">
         <%= @restaurant.name %>
-          <div>
-            <small>
-              <%= @restaurant.address %>
-            </small>
-            <span class="pull-right"><%= @restaurant.price_range %></span>
-          </div>
       </h1>
+
+      <section class="restaurant-details">
+        <address>
+          <%= @restaurant.address %>
+        </address>
+        <p class="pull-right">
+          <%= @restaurant.price_range %>
+        </p>
+      </section>
   </div>
 </div>
