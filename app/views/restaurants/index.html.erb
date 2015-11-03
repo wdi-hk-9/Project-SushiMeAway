@@ -1,3 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2>Search Results: <span> NAME SEARCHED</span></h2>
+      <p class="lead"><span> 0 </span> results </p>
+      <button class="btn btn-default" role="button">Ratings</button>
+      <button class="btn btn-default" role="button">Price</button>
+    </div>
+  </div>
+</div>
+
+<hr>
+
 <% @restaurants.each do |restaurant| %>
-  <%= restaurant.inspect %>
+  <div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+      <div class="result-details">
+        <%= restaurant.name %>
+        <%= render 'restaurants/header' %>
+
+        <p>
+          <%= restaurant.address %>
+          <span class="pull-right">
+            <%= restaurant.price_range %>
+          </span>
+        </p>
+      </div>
+      <%= image_tag(restaurant.image_url, width: '700', height: '400', alt: restaurant.name) %>
+    </div>
+  </div>
 <% end %>

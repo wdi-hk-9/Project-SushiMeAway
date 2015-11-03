@@ -1,0 +1,34 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">
+        <%= @restaurant.name %>
+        <%= render 'restaurants/header' %>
+
+        <p>
+          <small>
+            <%= @restaurant.address %>
+            <span class="pull-right">
+              <%= @restaurant.price_range %>
+            </span>
+          </small>
+        </p>
+      </h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+      <div class="col-md-8">
+        <%= image_tag(@restaurant.image_url, width: '700', height: '400', alt: @restaurant.name) %>
+      </div>
+
+      <div class="col-md-4">
+        <%= render 'restaurants/moreInfo' %>
+      </div>
+
+  </div>
+</div>
+
+<hr>
