@@ -25,7 +25,7 @@
           </span>
         </p>
       </div>
-      <img src="<%= restaurant.image_url %>" alt="<%= restaurant.name %>">
+      <%= image_tag(restaurant.image_url, width: '700', height: '400', alt: restaurant.name) %>
     </div>
   </div>
 <% end %>

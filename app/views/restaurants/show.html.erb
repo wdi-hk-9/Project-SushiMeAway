@@ -21,7 +21,7 @@
   <div class="row">
 
       <div class="col-md-8">
-          <img class="img-responsive" src="<%= @restaurant.image_url %>" alt="<%= @restaurant.name %>" style="width:700px;height:400px;">
+        <%= image_tag(@restaurant.image_url, width: '700', height: '400', alt: @restaurant.name) %>
       </div>
 
       <div class="col-md-4">
