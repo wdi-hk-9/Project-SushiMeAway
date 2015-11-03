@@ -16,3 +16,21 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  /*background-color: orange;*/
+  background-image: url("background_home.jpeg");
+}
+
+.navbar-nav > li > a {
+  color: white !important;
+}
+
+#nav-background {
+ background-color: #8A9598 ;;
+}
+
