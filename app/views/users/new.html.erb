@@ -1,33 +1,33 @@
 <div class="container">
-<div class="row">
-  <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well">
-    <h2>Join us</h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well">
+      <h2>Join us</h2>
 
-  <%= form_for @user do |f| %>
-    <% if @user.errors.any? %>
-      <div class="error_messages">
-        <h4>Form is invalid</h4>
-        <ul>
-          <% for message in @user.errors.full_messages %>
-            <li><font size="3" color="red"><%= message %></font></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-    <div class="field">
-      <%= f.text_field :email, {class: "form-control", placeholder: "Email"} %>
+      <%= form_for @user do |f| %>
+        <% if @user.errors.any? %>
+          <div class="error_messages">
+            <h4>Form is invalid</h4>
+            <ul>
+              <% for message in @user.errors.full_messages %>
+                <li><font size="3" color="red"><%= message %></font></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <div class="field">
+          <%= f.text_field :email, {class: "form-control", placeholder: "Email"} %>
+        </div>
+        <br>
+        <div class="field">
+          <%= f.password_field :password,{class: "form-control", placeholder: "Password"} %>
+        </div>
+        <br>
+        <div class="field">
+          <%= f.password_field :password_confirmation,{class: "form-control", placeholder: "Password Confirmation"} %>
+        </div>
+        <br>
+        <button class="btn btn-primary"> Sign up</button>
+      <% end %>
     </div>
-    <br>
-    <div class="field">
-      <%= f.password_field :password,{class: "form-control", placeholder: "Password"} %>
-    </div>
-    <br>
-    <div class="field">
-      <%= f.password_field :password_confirmation,{class: "form-control", placeholder: "Password Confirmation"} %>
-    </div>
-    <br>
-    <button class="btn btn-primary"> Log in </button>
-  <% end %>
-</div>
-</div>
+  </div>
 </div>

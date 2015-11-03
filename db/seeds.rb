@@ -10,6 +10,12 @@
 
 # rake db:seed
 
+District.delete_all
+districts = ["Kennedy Town", "HKU", "Sai Ying Pun", "Sheung Wan", "Central", "Admiralty", "Wan Chai", "Causeway Bay", "Tin Hau", "Fortress Hill", "North Point", "Quarry Bay", "Tai Koo", "Sai Wan Ho", "Shau Kei Wan", "Heng Fa Chuen", "Chai Wan"]
+
+districts.each do |district|
+  District.create(name: district)
+end
 
 # => Restaurant(id: integer, name: string, website: string, address: string, description: string, price_range: string, image_url: string, telephone: string, created_at: datetime, updated_at: datetime)
 #
