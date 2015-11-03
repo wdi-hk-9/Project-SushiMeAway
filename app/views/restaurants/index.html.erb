@@ -1,3 +1,20 @@
 <% @restaurants.each do |restaurant| %>
-  <%= restaurant.inspect %>
+  <%= link_to restaurant do %>
+    <div class="col-sm-4 col-lg-4 col-md-4">
+      <div class="thumbnail transparency">
+        <div class="result-details">
+          <h4><%= restaurant.name %></h4>
+          <div>
+            <%= restaurant.address %>
+          </div>
+          <div>
+            <span class="pull-right">
+              <%= restaurant.price_range %>
+            </span>
+          </div>
+        </div>
+        <%= image_tag restaurant.image_url %>
+      </div>
+    </div>
+  <% end %>
 <% end %>

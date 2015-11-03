@@ -1,4 +1,3 @@
-<!-- log in dropdown-->
 <% if current_user %>
 
   <li><a href="#"> hello, <%= current_user.email %> </a></li>
@@ -13,7 +12,7 @@
       Log In <span class="caret"></span>
     </a>
 
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" >
       <%= form_tag sessions_path, class: "navbar-form navbar-right" do %>
         <h5> Log in </h5>
         <div class="field">
@@ -28,7 +27,6 @@
           <button class="btn btn-primary"> Log in </button>
         </div>
       <% end %>
-
     </ul>
   </li>
 <% end %>

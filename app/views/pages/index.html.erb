@@ -1,17 +1,20 @@
-<div class="jumbotron feature">
-  <div class="container">
-    <h1>Sushi-ME Away</h1>
-    <p>Love take away sushi? You're in the right place!</p>
-    <p>
-      <form class="navbar-form navbar-left" role="search">
-         <div class="form-group">
-            <input type="text" class="form-control" placeholder="District Name">
-            <%= districts_options %>
-
-
+<header class="intro-header">
+  <div class="container" id="header_box">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well transparency">
+        <h1>Sushi-ME Away!</h1>
+        <p>Love take away sushi? You're in the right place!</p>
+        <div>
+          <%= form_tag 'restaurants/search', class: "navbar-form navbar-left" do |f| %>
+             <div class="form-group">
+                <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, {prompt: "Select a distict"}, {class: "form-control", style: "color: black"}) %>
+            </div>
+            <%= submit_tag 'Search', class:"btn btn-default" %>
+          <% end %>
         </div>
-        <button type="submit" class="btn btn-default">Search</button>
-      </form>
-    </p>
+      </div>
+    </div>
   </div>
-</div>
+</header>
+
+
