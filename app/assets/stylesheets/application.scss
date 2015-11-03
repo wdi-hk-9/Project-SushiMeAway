@@ -22,8 +22,14 @@
 }
 
 body {
-  /*background-color: orange;*/
   background-image: url("background_home.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+div.container {
+  color: white;
 }
 
 .navbar-nav > li > a {
