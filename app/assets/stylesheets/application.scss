@@ -28,8 +28,12 @@ body {
   background-color: black;
 }
 
-div.container {
+.content_header {
   color: white;
+}
+
+input, button, select, textarea {
+  margin-right: 20px;
 }
 
 .navbar-nav > li > a {
