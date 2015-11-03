@@ -1,7 +1,22 @@
+
 <% @restaurants.each do |restaurant| %>
-<ul>
-  <%= restaurant.name %>
-  <%= restaurant.address %>
-  <%= link_to 'Show', restaurant %>
-<ul>
+  <div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail transparency">
+      <div class="result-details">
+        <h4><%= restaurant.name %></h4>
+        <%= link_to 'Show', restaurant %>
+        <div>
+          <%= restaurant.address %>
+        </div>
+
+        <div>
+          <span class="pull-right">
+            <%= restaurant.price_range %>
+          </span>
+        </div>
+      </div>
+
+      <%= image_tag restaurant.image_url %>
+    </div>
+  </div>
 <% end %>
