@@ -2,17 +2,16 @@
   <%= link_to restaurant do %>
     <div class="col-sm-4 col-lg-4 col-md-4">
       <div class="thumbnail transparency">
-        <div class="result-details">
-          <h4><%= restaurant.name %></h4>
-          <div>
-            <address><%= restaurant.address %></address>
-          </div>
-          <div>
-            <span class="pull-right">
-              <%= restaurant.price_range %>
-            </span>
-          </div>
-        </div>
+        <h4><%= restaurant.name %></h4>
+
+        <address>
+          <%= restaurant.address %>
+        </address>
+
+        <p class="pull-right">
+          <%= restaurant.price_range %>
+        </p>
+
         <%= image_tag restaurant.image_url %>
       </div>
     </div>
