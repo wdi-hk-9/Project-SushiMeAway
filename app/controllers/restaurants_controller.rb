@@ -1,12 +1,12 @@
 class RestaurantsController < ApplicationController
 
   def index
-    @restaurants = Restaurant.all
-  end
-
-  def search
-    district_id = params['restaurant']['district_id']
-    @restaurants = District.find(district_id).restaurants
+    district_id = params[:restaurant][:district_id]
+    if district_id != ""
+      @restaurants = Restaurant.where(district_id: district_id)
+    else
+      @restaurants = Restaurant.all
+    end
     render 'index'
   end
 

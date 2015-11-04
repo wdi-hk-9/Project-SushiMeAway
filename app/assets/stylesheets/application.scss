@@ -28,6 +28,7 @@ body {
   background-size: cover;
   background-color: black;
   margin-top: 50px;
+  background-position: 50% 20%;
 }
 
 /*log container in on the nav bar*/
@@ -35,12 +36,14 @@ input, button, select, textarea {
   margin-right: 20px;
 }
 
-.home_btn {
-  display: block;
+.intro-header{
+  text-align: center;
+  margin-top: 200px;
+}
+
+.home-btn {
   border: 1px solid;
-  font-size: -webkit-xxx-large;
-  margin: auto;
-  margin-top: 87px;
+  font-size: 30px;
 }
 
 .home-header, .home-header2 {
@@ -131,7 +134,7 @@ input, button, select, textarea {
       }
     }
   }
-  .home_btn {
+  .home-btn {
     font-size: 30px;
   }
 }

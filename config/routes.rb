@@ -11,7 +11,4 @@ Rails.application.routes.draw do
     resources :comments,  only: [:create]
     resources :ratings,   only: [:create]
   end
-
-  post 'restaurants/search', to: 'restaurants#search'
-  # post 'restaurants/:id', to: 'comments#create'
 end
