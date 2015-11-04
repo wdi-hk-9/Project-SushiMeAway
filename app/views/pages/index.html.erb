@@ -9,6 +9,7 @@
             <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, {prompt: "Select a distict"}, {class: "form-control", style: "color: black"}) %>
           </div>
             <%= submit_tag 'Search', class:"btn btn-warning btn-block" %>
+            <%= link_to 'Show all', restaurants_path, class:"btn btn-primary btn-xs text-center" %>
         <% end %>
       </div>
     </div>
