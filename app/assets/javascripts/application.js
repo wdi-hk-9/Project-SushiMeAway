@@ -16,3 +16,14 @@
 //= require_tree .
 //= require jquery
 //= require bootstrap
+
+$(document).ready(function(){
+  $('.open').click(function(){
+    $('.showpanel').slideToggle('slow');
+    if($(this).text() == 'Close'){
+      $(this).text('Show');
+    }else{
+      $(this).text('Close');
+    }
+  });
+});
