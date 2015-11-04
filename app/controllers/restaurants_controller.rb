@@ -8,6 +8,8 @@ class RestaurantsController < ApplicationController
     district_id = params['restaurant']['district_id']
     @restaurants = District.find(district_id).restaurants
     render 'index'
+    rescue ActiveRecord::RecordNotFound
+    redirect_to(restaurants_url)
   end
 
   def show
