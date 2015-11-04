@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // show description on restaurant porfile
-  $('.open').click(function(){
+  $('.open').on("click", function(){
     $('.showDescription').slideToggle('slow');
     if($(this).text() == '(close)'){
       $(this).text('(show more)');
