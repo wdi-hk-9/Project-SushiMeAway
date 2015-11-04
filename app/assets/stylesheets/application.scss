@@ -18,7 +18,7 @@
 @import "bootstrap";
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -28,15 +28,81 @@ body {
   background-color: black;
 }
 
+/*log container in on the nav bar*/
 input, button, select, textarea {
   margin-right: 20px;
+}
+
+.home-header, .home-header2{
+  font-weight: bolder;
+  color: #FFFFFF;
+  font-family: 'Signika', sans-serif;
+  padding-bottom: 10px;
+  font-size: 70px;
+  text-align: center;
+  text-shadow: black 2px 2px 1px;
+}
+
+.home-header2{
+  font-size: 27px;
+  text-shadow: black 2px 2px 1px;
+}
+
+.row {
+  background-color:rgba(255,255,255,0.1);
+  margin-left: 0px;
+  margin-right: 0px;
+
 }
 
 .navbar-nav > li > a {
   color: white !important;
 }
 
-#nav-background {
- background-color: #8A9598 ;;
+.navbar-toggle {
+  border: 1px solid white;
+  .icon-bar{
+    border: 1px solid white;
+  }
 }
 
+#nav-background {
+ background-color: #8A9598 ;
+}
+
+.restaurant-header{
+  color: white;
+}
+
+.restaurant-cards {
+  margin-bottom: 10px;
+  .card-wrapper {
+    height: 350px;
+    padding: 10px;
+    .address {
+      height: 40px;
+    }
+  }
+}
+
+.result-show {
+  width: auto;
+  height: 239px;
+  overflow: hidden;
+  clear: both;
+  img {
+    width: 100%;
+  }
+}
+
+.img-profile{
+  height: 450px;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+
+.showDescription{
+  display:none;
+}
