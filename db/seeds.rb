@@ -1,3 +1,9 @@
+# create dummy users
+User.delete_all
+User.create({name: "Sarah", email: "wow@socool.com", password: "1234", password_confirmation: "1234"})
+User.create({name: "David", email: "cool@amazing.com", password: "12345", password_confirmation: "12345"})
+
+# Dropdown to search for restaurants
 District.delete_all
 districts = ["Kennedy Town", "HKU", "Sai Ying Pun", "Sheung Wan", "Central", "Admiralty", "Wan Chai", "Causeway Bay", "Tin Hau", "Fortress Hill", "North Point", "Quarry Bay", "Tai Koo", "Sai Wan Ho", "Shau Kei Wan", "Heng Fa Chuen", "Chai Wan"]
 
@@ -5,6 +11,9 @@ districts.each do |district|
   District.create(name: district)
 end
 
+# Create Restaurant database
+# Restaurant.create({name: "", website: "", address: "", description:"", price_range: "", image_url: "", telephone: "", opening_weekday:"", opening_weekend: ""})
+Restaurant.delete_all
 Restaurant.create({name: "Genki Sushi", website: "www.genkisushi.com.hk", address: "Shop 241, 2/F, Shun Tak Centre, 168-200 Connaught Road Central, Sheung Wan", description:"To bring sushi within the reach of everyone. To introduce this unique Japanese dining experience to the world and to never stop improving and upgrading our skills.", price_range: "$101-$200", image_url: "http://i.imgur.com/WA7UWAA.jpg", telephone: "2540 8929", opening_weekday:"11:30-22:30", opening_weekend: "11:30-22:30", district_id: 4})
 
 Restaurant.create({name: "Itamae Sushi", website: "www.itamae.com.hk/", address: "G/F, 44 Soy Street, Mong Kok", description:"Wow not a single branch left in HK Island! What a fall into disgrace", price_range: "$101-$200", image_url: "http://i.imgur.com/qIBykGA.jpg", telephone: "2771 1895", opening_weekday:"11:30-01:30", opening_weekend: "11:30-01:30", district_id: 5})
@@ -23,4 +32,23 @@ Restaurant.create({name: "Mitaki", website: "www.facebook.com/Mitaki-三滝-4876
 
 Restaurant.create({name: "Wasabi Warriors", website: "www.wasabiwarriors.com.hk/", address: "Shop F, G/F, World Trust Tower, 50 Stanley Street, Central", description:"The Wasabi Warriors are five brothers: Ocean, Porky, Beefy, Chicken and Veggie Warrior. The five young brothers were mentored by their father, who trained them in the ways of the traditional Warrior – to honour the ocean, earth and animals. As the brothers grew, they separated, but with the passing of time they reformed, and now search for Warriors to join them in sustainable, economical and honourable practices to eat good, do good and feel good.", price_range: "$51-$100", image_url: "http://i.imgur.com/fLUY465.jpg", telephone: "2323 1512", opening_weekday:"11:00-20:00", opening_weekend: "11:00-17:00 (Sunday closed)", district_id: 5})
 
-# Restaurant.create({name: "", website: "", address: "", description:"", price_range: "", image_url: "", telephone: "", opening_weekday:"", opening_weekend: ""})
+#Create Comments
+#Comment.create({id: content: "Amazing place", restaurant_id: 1, user_id: 1})
+Comment.delete_all
+Comment.create({content: "Amazing place", restaurant_id: 1, user_id: 1})
+Comment.create({content: "Can't wait to come back", restaurant_id: 1, user_id: 2})
+
+Comment.create({content: "It was my Birthday today. Therefore my friends and I go to The Greenery to celebrate my Birthday. The food was great and will recommend it to others", restaurant_id: 3, user_id: 1})
+Comment.create({content: "Delicious!!!!", restaurant_id: 3, user_id: 2})
+
+
+Comment.create({content: "Came here with boyfriend as it was a late lunch. It was really hot out and I wanted something cool to eat. The food was okay.", restaurant_id: 4, user_id: 1})
+Comment.create({content: "Delicious!!!!", restaurant_id: 4, user_id: 2})
+
+
+
+
+
+
+
+
