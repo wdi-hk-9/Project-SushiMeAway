@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'comments/create'
+
   root :to => 'pages#index'
 
   get 'login', to: 'sessions#new'
