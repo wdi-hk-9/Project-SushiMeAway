@@ -31,3 +31,13 @@
   <br>
   <%= render 'comments/box', comments: @comments %>
 </div>
+
+<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well">
+  <h4>Leave a Rating</h4>
+  <%= form_for @rating, url: restaurant_ratings_path(@restaurant.id) do |f| %>
+    <div class="form-group">
+      <%= f.select :value, (1..5), selected: 5, class:"form-control" %>
+    </div>
+    <%= f.submit "Rate this Article", class:"btn btn-primary"  %>
+  <% end %>
+</div>
