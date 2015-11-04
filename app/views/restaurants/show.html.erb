@@ -23,7 +23,7 @@
   <%= form_for @comment, url: restaurant_comments_path(@restaurant.id) do |f| %>
     <h4>Leave a Comment:</h4>
     <div class="form-group">
-      <%= f.text_area :content, class:"form-control" %>
+      <%= f.text_area :content, class:"form-control", placeholder:"Tell us what you think"%>
       <%= submit_tag 'Submit', class:"btn btn-primary pull-right" %>
       <br>
     </div>
