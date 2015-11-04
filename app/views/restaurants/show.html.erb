@@ -12,3 +12,19 @@
   </div>
 </div>
 <hr>
+
+<%= form_for @comment, url: restaurant_comments_path(@restaurant.id) do |f| %>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<div>
+  <%= render 'comments/box', comments: @comments %>
+</div>

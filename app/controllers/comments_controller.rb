@@ -9,11 +9,11 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to restaurant_path(params[:restaurant_id])
     else
-      @comment.errors.messages
       redirect_to restaurant_path(params[:restaurant_id])
     end
   end
 end
+
 
 
 # /restuarant/:restaurant_id/comments

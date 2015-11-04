@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   end
 
   post 'restaurants/search', to: 'restaurants#search'
+  # post 'restaurants/:id', to: 'comments#create'
 end
