@@ -117,12 +117,12 @@ input, button, select, textarea {
 @media (max-width:640px) {
   .intro-header {
     padding: 75px 0 25px 0;
-  }
-  .intro-header h1 {
-    font-size: 60px;
-  }
-  .intro-header h2 {
-    font-size: 30px;
+    h1 {
+      font-size: 60px;
+      h2 {
+        font-size: 30px;
+      }
+    }
   }
   .home_btn {
     font-size: 30px;
