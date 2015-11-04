@@ -13,7 +13,3 @@ class CommentsController < ApplicationController
     end
   end
 end
-
-
-
-# /restuarant/:restaurant_id/comments
