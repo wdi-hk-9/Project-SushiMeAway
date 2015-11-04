@@ -13,18 +13,26 @@
 </div>
 <hr>
 
-<%= form_for @comment, url: restaurant_comments_path(@restaurant.id) do |f| %>
 
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_field :content %>
+
+
+
+
+<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well">
+  <h4>Leave a Comment:</h4>
+  <%= form_for @comment, url: restaurant_comments_path(@restaurant.id) do |f| %>
+
+  <div class="form-group">
+    <%= f.text_area :content, class:"form-control" %>
   </div>
+    <%= submit_tag 'Submit', class:"btn btn-primary" %>
+  <% end %>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
 
-<div>
+<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well">
   <%= render 'comments/box', comments: @comments %>
 </div>
+
+
+
