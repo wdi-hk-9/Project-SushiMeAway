@@ -1,16 +1,10 @@
 <div class="row">
-  <div class="col-lg-12">
-      <h1 class="page-header">
-        <%= @restaurant.name %>
-      </h1>
-
-      <section class="restaurant-details">
-        <address>
-          <%= @restaurant.address %>
-        </address>
-        <p class="pull-right">
-          <%= @restaurant.price_range %>
-        </p>
-      </section>
+  <div class="col-lg-12 page-header">
+    <h1>
+      <%= @restaurant.name %>
+      <span class="pull-right">
+        <%= @restaurant.price_range %>
+      </span>
+    </h1>
   </div>
 </div
