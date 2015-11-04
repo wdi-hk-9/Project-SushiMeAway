@@ -21,11 +21,10 @@ $(document).ready(function(){
   // show description on restaurant porfile
   $('.open').click(function(){
     $('.showDescription').slideToggle('slow');
-    if($(this).text() == 'Close'){
-      $(this).text('Show');
+    if($(this).text() == '(close)'){
+      $(this).text('(show more)');
     }else{
-      $(this).text('Close');
+      $(this).text('(close)');
     }
   });
-
 });

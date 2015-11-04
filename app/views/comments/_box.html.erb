@@ -1,5 +1,7 @@
-<% @comments.each do |comment| %>
-  <p>Posted by: <%= comment.user.name%></p>
+<% @comments.reverse_each do |comment| %>
+  <p>Posted by: <%= comment.user.name%>
+    <span class="pull-right"><%= time_ago_in_words(comment.created_at) %> ago</span>
+  </p>
   <div class="well">
     <div class="media-body">
       <p><%= comment.content %></p>
