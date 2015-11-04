@@ -18,7 +18,7 @@
 @import "bootstrap";
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -37,6 +37,30 @@ input, button, select, textarea {
 }
 
 #nav-background {
- background-color: #8A9598 ;;
+ background-color: #8A9598 ;
 }
 
+.restaurant-header{
+  color: white;
+}
+
+.restaurant-cards {
+  margin-bottom: 10px;
+  .card-wrapper {
+    height: 350px;
+    padding: 10px;
+    .address {
+      height: 40px;
+    }
+  }
+}
+
+.result-show {
+  width: auto;
+  height: 239px;
+  overflow: hidden;
+  clear: both;
+  img {
+    width: 100%;
+  }
+}
