@@ -13,8 +13,8 @@
       <div class="form-group">
         <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, {prompt: "Filter by distict"}, {class: "form-control"}) %>
       </div>
-        <%= submit_tag 'Search', class:"btn btn-warning btn-block" %>
-        <%= link_to 'Show all', restaurants_path, class:"btn btn-primary btn-block" %>
+      <%= submit_tag 'Search', class:"btn btn-warning btn-block" %>
+      <%= link_to 'Show all', restaurants_path, class:"btn btn-primary btn-block" %>
     <% end %>
   </div>
 </div>
