@@ -28,9 +28,24 @@ body {
   background-color: black;
 }
 
+/*log container in on the nav bar*/
 input, button, select, textarea {
   margin-right: 20px;
 }
+
+.home-header, .home-header2{
+  font-weight: bold;
+  color: #fcf8e3;
+  text-shadow: orange 1px 1px 8px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.home-header2{
+  font-size: 23px;
+  text-shadow: black 1px 1px 8px;
+}
+
 
 .navbar-nav > li > a {
   color: white !important;

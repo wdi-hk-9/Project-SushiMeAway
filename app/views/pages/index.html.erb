@@ -1,17 +1,15 @@
 <header class="intro-header">
-  <div class="container" id="header_box">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well transparency">
-        <h1>Sushi-ME Away!</h1>
-        <p>Love take away sushi? You're in the right place!</p>
-        <div>
-          <%= form_tag 'restaurants/search', class: "navbar-form navbar-left" do |f| %>
-             <div class="form-group">
-                <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, {prompt: "Select a distict"}, {class: "form-control", style: "color: black"}) %>
-            </div>
-            <%= submit_tag 'Search', class:"btn btn-default" %>
-          <% end %>
-        </div>
+  <div class="row">
+    <h1 class="home-header">Sushi-ME Away!</h1>
+    <h2 class="home-header2">Love take away sushi? You're in the right place!</h2>
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well transparency">
+      <div>
+        <%= form_tag 'restaurants/search' do |f| %>
+           <div class="form-group">
+              <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, {prompt: "Select a distict"}, {class: "form-control", style: "color: black"}) %>
+          </div>
+          <%= submit_tag 'Search', class:"btn btn-warning btn-block" %>
+        <% end %>
       </div>
     </div>
   </div>
