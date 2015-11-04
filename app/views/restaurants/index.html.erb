@@ -1,20 +1,12 @@
 <!-- Header -->
-<div class="row">
-  <div class="col-xs-12 col-md-12">
-    <h1 class="page-header restaurant-header">
-      Sushi-Me-Away!
-    </h1>
-  </div>
-</div>
-
-<div class="container">
-  <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 well">
+<div class="row box">
+  <div class="col-xs-12 form-inline pull-left ">
     <%= form_tag 'restaurants/search' do |f| %>
       <div class="form-group">
         <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, {prompt: "Filter by distict"}, {class: "form-control"}) %>
       </div>
-      <%= submit_tag 'Search', class:"btn btn-warning btn-block" %>
-      <%= link_to 'Show all', restaurants_path, class:"btn btn-primary btn-block" %>
+      <%= submit_tag 'Search', class:"btn btn-warning" %>
+      <%= link_to 'Show all', restaurants_path, class:"btn btn-primary button_showAll" %>
     <% end %>
   </div>
 </div>
