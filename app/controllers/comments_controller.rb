@@ -1,5 +1,7 @@
 class CommentsController < ApplicationController
 
+ before_action :authenticate
+
   def create
     @comment = Comment.new
     @comment.content = params[:comment][:content]

@@ -23,9 +23,11 @@
 
 body {
   background-image: image-url("background_home.jpeg");
+  display: block;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
+  margin-top: 50px;
 }
 
 /*log container in on the nav bar*/
@@ -33,35 +35,40 @@ input, button, select, textarea {
   margin-right: 20px;
 }
 
-.home-header, .home-header2{
+.home_btn {
+  display: block;
+  border: 1px solid;
+  font-size: -webkit-xxx-large;
+  margin: auto;
+  margin-top: 87px;
+}
+
+.home-header, .home-header2 {
   font-weight: bolder;
-  color: #FFFFFF;
+  color: #80E4A2;
   font-family: 'Signika', sans-serif;
   padding-bottom: 10px;
-  font-size: 70px;
+  font-size: 91px;
   text-align: center;
   text-shadow: black 2px 2px 1px;
 }
 
-.home-header2{
+.home-header2 {
   font-size: 27px;
   text-shadow: black 2px 2px 1px;
-}
-
-.row {
-  background-color:rgba(255,255,255,0.1);
-  margin-left: 0px;
-  margin-right: 0px;
-
 }
 
 .navbar-nav > li > a {
   color: white !important;
 }
 
+.box {
+  margin-top: 50px;
+}
+
 .navbar-toggle {
   border: 1px solid white;
-  .icon-bar{
+  .icon-bar {
     border: 1px solid white;
   }
 }
@@ -70,7 +77,7 @@ input, button, select, textarea {
  background-color: #8A9598 ;
 }
 
-.restaurant-header{
+.restaurant-header {
   color: white;
 }
 
@@ -95,14 +102,29 @@ input, button, select, textarea {
   }
 }
 
-.img-profile{
+.img-profile {
   height: 450px;
   overflow: hidden;
-  img{
+  img {
     width: 100%;
   }
 }
 
-.showDescription{
+.showDescription {
   display:none;
+}
+
+@media (max-width:640px) {
+  .intro-header {
+    padding: 75px 0 25px 0;
+  }
+  .intro-header h1 {
+    font-size: 60px;
+  }
+  .intro-header h2 {
+    font-size: 30px;
+  }
+  .home_btn {
+    font-size: 30px;
+  }
 }
