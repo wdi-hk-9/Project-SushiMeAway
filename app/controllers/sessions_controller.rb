@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to root_path, notice: "logged in!"
 
     else
-      flash[:error] = "invalid login credentials"
+      flash[:danger] = "invalid login credentials"
       render "new"
     end
   end

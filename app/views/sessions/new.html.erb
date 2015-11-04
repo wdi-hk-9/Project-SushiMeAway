@@ -7,7 +7,11 @@
       <h2>Log In</h2>
 
       <%= form_tag sessions_path do %>
-        <font size="3" color="red"><%= flash[:error] %></font>
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %>
+          </div>
+        <% end %>
+
         <div class="field">
           <%= text_field_tag :email, params[:email], {class: "form-control", placeholder: "Email"} %>
         </div>

@@ -9,7 +9,7 @@
             <h4>Form is invalid</h4>
             <ul>
               <% for message in @user.errors.full_messages %>
-                <li><font size="3" color="red"><%= message %></font></li>
+                <li><%= message %></li>
               <% end %>
             </ul>
           </div>
