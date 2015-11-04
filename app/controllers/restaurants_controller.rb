@@ -14,5 +14,7 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.find(params[:id])
     @comments = @restaurant.comments
     @comment = Comment.new
+    @ratings = @restaurant.ratings
+    @rating = Rating.new
   end
 end
