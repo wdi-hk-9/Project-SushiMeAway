@@ -9,10 +9,10 @@
 
 <div class="row">
   <% @restaurants.each do |restaurant| %>
-      <div class="col-xs-12 col-md-6 col-lg-4 restaurant-cards">
-        <%= link_to restaurant do %>
-          <div class="card-wrapper thumbnail transparency">
-            <h4><%= restaurant.name %></h4>
+    <div class="col-xs-12 col-md-6 col-lg-4 restaurant-cards">
+      <%= link_to restaurant do %>
+        <div class="card-wrapper thumbnail transparency">
+          <h4><%= restaurant.name %></h4>
             <div class="address">
               <%= restaurant.address %>
             </div>
@@ -24,7 +24,7 @@
             <div class="result-show">
               <%= image_tag restaurant.image_url, class: "img-responsive" %>
             </div>
-          </div>
+        </div>
       <% end %>
     </div>
   <% end %>
