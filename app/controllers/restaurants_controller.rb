@@ -1,15 +1,13 @@
 class RestaurantsController < ApplicationController
 
   def index
-    @restaurants = Restaurant.all
-  end
-
-  def search
-    district_id = params['restaurant']['district_id']
-    @restaurants = District.find(district_id).restaurants
+    district_id = params[:restaurant][:district_id]
+    if district_id != ""
+      @restaurants = Restaurant.where(district_id: district_id)
+    else
+      @restaurants = Restaurant.all
+    end
     render 'index'
-    rescue ActiveRecord::RecordNotFound
-    redirect_to(restaurants_url)
   end
 
   def show
@@ -20,12 +18,3 @@ class RestaurantsController < ApplicationController
     @rating = Rating.new
   end
 end
-
- #  user = User.find_by_email(params[:email])
- #  if user && user.authenticate(params[:password])
- #    redirect_to root_path, notice: "logged in!"
- #  else
- #   flash.now.alert = "invalid login credentials"
- #   render "new"  # sessions#new
- #  end
- # end
