@@ -1,7 +1,8 @@
 class RestaurantsController < ApplicationController
+  before_action :get_id
 
   def index
-    district_id = params[:restaurant][:district_id]
+    district_id = get_id
     if district_id != ""
       @restaurants = Restaurant.where(district_id: district_id)
     else
@@ -16,5 +17,14 @@ class RestaurantsController < ApplicationController
     @comment = Comment.new
     @ratings = @restaurant.ratings
     @rating = Rating.new
+  end
+
+  private
+  def get_id
+    if params[:restaurant]
+      return params[:restaurant][:district_id]
+    else
+      return ""
+    end
   end
 end
