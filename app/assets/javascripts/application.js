@@ -18,12 +18,14 @@
 //= require bootstrap
 
 $(document).ready(function(){
+  // show description on restaurant porfile
   $('.open').click(function(){
-    $('.showpanel').slideToggle('slow');
+    $('.showDescription').slideToggle('slow');
     if($(this).text() == 'Close'){
       $(this).text('Show');
     }else{
       $(this).text('Close');
     }
   });
+
 });

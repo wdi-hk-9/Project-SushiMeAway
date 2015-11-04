@@ -36,6 +36,13 @@ input, button, select, textarea {
   color: white !important;
 }
 
+.navbar-toggle {
+  border: 1px solid white;
+  .icon-bar{
+    border: 1px solid white;
+  }
+}
+
 #nav-background {
  background-color: #8A9598 ;
 }
@@ -73,6 +80,6 @@ input, button, select, textarea {
   }
 }
 
-.showpanel{
+.showDescription{
   display:none;
 }
