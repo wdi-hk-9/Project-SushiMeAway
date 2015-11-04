@@ -34,11 +34,13 @@ input, button, select, textarea {
 }
 
 .home-header, .home-header2{
-  font-weight: bold;
-  color: #DEDEDE;
-  text-shadow: #4C3D3D -4px 6px 1px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  font-family: 'Signika', sans-serif;
+  padding-bottom: 10px;
   font-size: 70px;
   text-align: center;
+  text-shadow: black 2px 2px 1px;
 }
 
 .home-header2{
@@ -46,6 +48,12 @@ input, button, select, textarea {
   text-shadow: black 2px 2px 1px;
 }
 
+.row {
+  background-color:rgba(255,255,255,0.1);
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
 
 .navbar-nav > li > a {
   color: white !important;
