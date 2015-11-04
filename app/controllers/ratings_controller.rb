@@ -1,5 +1,6 @@
 class RatingsController < ApplicationController
   before_filter :set_restaurant
+  before_action :authenticate, only: :create
 
   def create
     @rating = @restaurant.ratings.new(rating_params)

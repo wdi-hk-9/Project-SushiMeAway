@@ -36,7 +36,7 @@
   <h4>Leave a Rating</h4>
   <%= form_for @rating, url: restaurant_ratings_path(@restaurant.id) do |f| %>
     <div class="form-group">
-      <%= f.select :value, (1..5), selected: 5,class:"form-control" %>
+      <%= f.select :value, (1..5), selected: 5, class:"form-control" %>
     </div>
     <%= f.submit "Rate this Article", class:"btn btn-primary"  %>
   <% end %>
