@@ -11,13 +11,10 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    @comments = Comment.all
-
-    # @comment.restaurant_id = params[:restaurant_id]
-
-    @comment = Comment.new
     @restaurant = Restaurant.find(params[:id])
+    @comments = @restaurant.comments
+    @comment = Comment.new
   end
 end
 
-# /restaurant/1
+
