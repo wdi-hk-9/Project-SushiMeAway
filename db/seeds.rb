@@ -1,11 +1,11 @@
 # create dummy users
 User.delete_all
-User.create({name: "Sarah", email: "wow@socool.com", password: "1234", password_confirmation: "1234"})
+User.create({name: "Sarah Woods", email: "wow@socool.com", password: "1234", password_confirmation: "1234"})
 User.create({name: "David", email: "cool@amazing.com", password: "12345", password_confirmation: "12345"})
 
 # Dropdown to search for restaurants
 District.delete_all
-districts = ["Kennedy Town", "HKU", "Sai Ying Pun", "Sheung Wan", "Central", "Admiralty", "Wan Chai", "Causeway Bay", "Tin Hau", "Fortress Hill", "North Point", "Quarry Bay", "Tai Koo", "Sai Wan Ho", "Shau Kei Wan", "Heng Fa Chuen", "Chai Wan", "Tsim Sha Tsui", "Mong Kok"]
+districts = ["Kennedy Town", "HKU", "Sai Ying Pun", "Sheung Wan", "Central", "Admiralty", "Wan Chai", "Causeway Bay", "Tin Hau", "Fortress Hill", "North Point", "Quarry Bay", "Tai Koo", "Sai Wan Ho", "Shau Kei Wan", "Chai Wan", "Tsim Sha Tsui", "Mong Kok"]
 
 districts.each do |district|
   District.create(name: district)
@@ -36,12 +36,17 @@ Restaurant.create({name: "Wasabi Warriors", website: "www.wasabiwarriors.com.hk/
 #Create Comments
 #Comment.create({id: content: "Amazing place", restaurant_id: 1, user_id: 1})
 Comment.delete_all
-Comment.create({content: "Amazing place.", restaurant_id: Restaurant.find_by_name("Genki Sushi").id, user_id: User.find_by_name("Sarah").id})
-Comment.create({content: "I saw a couple breakup", restaurant_id: Restaurant.find_by_name("Genki Sushi").id, user_id: User.find_by_name("David").id})
+Comment.create({content: "Personally for me, the Genki in Tseung Kwan O has better standards than the branches on HK Island. Will you be adding multiple branches of the same restaurant?", restaurant_id: Restaurant.find_by_name("Genki Sushi").id, user_id: User.find_by_name("Sarah Woods").id})
 
-Comment.create({content: "It was my Birthday today and I went to The Greenery to celebrate my Birthday. The food was great but I wish I had friends.", restaurant_id: Restaurant.find_by_name("Itamae Sushi").id, user_id: User.find_by_name("Sarah").id})
-Comment.create({content: "a/s/l?", restaurant_id: Restaurant.find_by_name("Itamae Sushi").id, user_id: User.find_by_name("David").id})
+Comment.create({content: "Hi Sarah, I think if you send the admin an email they'd be happy to add it. Their email is on their front page.", restaurant_id: Restaurant.find_by_name("Genki Sushi").id, user_id: User.find_by_name("David").id})
+
+Comment.create({content: "It was my Birthday today and I went to Itamae to celebrate it alone. They had this VIP table for me in the back. I don't know why but the waiters were especially nice to me.", restaurant_id: Restaurant.find_by_name("Itamae Sushi").id, user_id: User.find_by_name("Sarah Woods").id})
+
+Comment.create({content: "you went alone?", restaurant_id: Restaurant.find_by_name("Itamae Sushi").id, user_id: User.find_by_name("David").id})
 
 
-Comment.create({content: "Came here with boyfriend for a late lunch. He got two texts when we ate. I had a quick glance over his screen and saw the sender's name was Lina Tinder. What should I do?", restaurant_id: Restaurant.find_by_name("Wasabi Warriors").id, user_id: User.find_by_name("Sarah").id})
-Comment.create({content: "This isn't reddit/r/relationships", restaurant_id: Restaurant.find_by_name("Wasabi Warriors").id, user_id: User.find_by_name("David").id})
+Comment.create({content: "Came here with boyfriend for a late lunch. He got two texts while we ate. I had a quick glance over his screen and saw the sender's name was Lina Tinder. What should I do?", restaurant_id: Restaurant.find_by_name("Wasabi Warriors").id, user_id: User.find_by_name("Sarah Woods").id})
+
+Comment.create({content: "you need to confront him over this. want me to help you?", restaurant_id: Restaurant.find_by_name("Wasabi Warriors").id, user_id: User.find_by_name("David").id})
+
+Comment.create({content: "No thanks David.", restaurant_id: Restaurant.find_by_name("Wasabi Warriors").id, user_id: User.find_by_name("Sarah Woods").id})
