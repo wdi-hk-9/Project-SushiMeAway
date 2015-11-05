@@ -1,6 +1,6 @@
 <% if current_user %>
 
-  <li><a href="#"> Hello, <%= current_user.name %> </a></li>
+  <li><a href="#"> Welcome <%= current_user.name %>!</a></li>
   <li><%= link_to 'Logout', session_path(session), method: :delete %></li>
 
 <% else %>

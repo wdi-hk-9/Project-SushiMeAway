@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.open').on("click", function(){
     $('.showDescription').slideToggle('slow');
     if($(this).text() == '(close)'){
-      $(this).text('(show more)');
+      $(this).text('(Click me!)');
     }else{
       $(this).text('(close)');
     }
