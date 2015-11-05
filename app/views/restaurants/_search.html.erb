@@ -1,0 +1,11 @@
+<div class="row box">
+  <div class="col-xs-12 form-inline pull-left ">
+    <%= form_tag '/restaurants', {method: "get"} do |f| %>
+      <div class="form-group">
+        <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, {prompt: "Filter by distict"}, {class: "form-control"}) %>
+      </div>
+      <%= submit_tag 'Search', class:"btn btn-warning" %>
+      <%= link_to 'Show all', restaurants_path, class:"btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

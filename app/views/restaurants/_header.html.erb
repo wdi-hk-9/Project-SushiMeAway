@@ -1,8 +1,18 @@
 <div class="page-header">
   <h1>
     <%= @restaurant.name %>
+    <small> (Overall rating: <%= avgPoints(@restaurant.ratings) %> / 10 )</small>
     <span class="pull-right">
       <%= @restaurant.price_range %>
     </span>
   </h1>
+
+  <div class="form-inline">
+    <%= form_for @rating, url: restaurant_ratings_path(@restaurant.id) do |f| %>
+      <div class="form-group">
+        <%= f.select(:value, options_for_select((1..10), selected: 10), {}, {class: "form-control"}) %>
+      </div>
+      <%= f.submit "Rate this Store", class:"btn btn-primary"  %>
+    <% end %>
+  </div>
 </div>

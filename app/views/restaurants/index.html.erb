@@ -1,24 +1,11 @@
-<!-- Header -->
-<div class="row box">
-  <div class="col-xs-12 form-inline pull-left ">
-    <%= form_tag '/restaurants', {method: "get"} do |f| %>
-      <div class="form-group">
-        <%= collection_select(:restaurant, :district_id, District.order(:name).all, :id, :name, {prompt: "Filter by distict"}, {class: "form-control"}) %>
-      </div>
-      <%= submit_tag 'Search', class:"btn btn-warning" %>
-      <%= link_to 'Show all', restaurants_path, class:"btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
-
+<%= render 'restaurants/search' %>
 <br>
-
 <div class="row">
   <% @restaurants.each do |restaurant| %>
     <div class="col-xs-12 col-md-6 col-lg-4 restaurant-cards">
       <%= link_to restaurant_path(restaurant) do %>
         <div class="card-wrapper thumbnail transparency">
-          <h4><%= restaurant.name %></h4>
+          <h4><%= restaurant.name %> <small> <%= avgPoints(restaurant.ratings) %> / 10 </small></h4>
           <div class="address">
             <%= restaurant.address %>
           </div>

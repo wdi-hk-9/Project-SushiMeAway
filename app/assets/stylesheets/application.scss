@@ -28,7 +28,7 @@ body {
   background-size: cover;
   background-color: black;
   margin-top: 50px;
-  background-position: 50% 20%;
+  background-position: center;
 }
 
 /*log container in on the nav bar*/
@@ -36,7 +36,11 @@ input, button, select, textarea {
   margin-right: 20px;
 }
 
-.intro-header{
+.about-us {
+  margin-top: 130px;
+}
+
+.intro-header {
   text-align: center;
   margin-top: 200px;
 }
@@ -124,7 +128,7 @@ input, button, select, textarea {
   font-style: italic;
 }
 
-@media (max-width:640px) {
+@media (max-width:336px) {
   .intro-header {
     padding: 75px 0 25px 0;
     h1 {
